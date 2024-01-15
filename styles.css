@@ -1,0 +1,126 @@
+/* Reset some basic elements */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Basic styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 50px; /* space for fixed header */
+}
+
+header {
+    background-color: #4a584b; /* darker sage green */
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#logo {
+    display: block;
+    margin: 0 auto;
+    height: 60px; /* Adjust as needed */
+}
+
+nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #d1c4e9; /* darker violet */
+    font-weight: bold;
+}
+
+/* Hero Section */
+#hero {
+    background-color: grey; /* darker violet */
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+#hero h1 {
+    margin-bottom: 0.5rem;
+}
+
+#hero p {
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    background-color: #4a584b; /* darker sage green */
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Services Section */
+#services, #training, #projects {
+    padding: 2rem;
+    background: #fff;
+}
+
+#services h2, #training h2, #projects h2 {
+    color: #4a584b; /* darker sage green */
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #312a32; /* darker violet */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer address {
+    margin-bottom: 0.5rem;
+}
+
+footer img{
+    vertical-align: middle;
+    margin-right: 8px;
+    height: 20px; /* Adjust as needed */
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+    display: block;
+    margin: 10px 0;
+    }
+    .cta-button {
+        display: block;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    /* Responsive adjustments */
+    #hero {
+        padding: 1rem;
+    }
+
+    #services, #training, #projects {
+        padding: 1rem;
+    }
+}
