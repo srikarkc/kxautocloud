@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Outfit Recommendations</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="advisor.ico">
 </head>
 <body>
     <div class="container">
@@ -60,6 +61,29 @@
                     <option value="cotton">Cotton</option>
                     <option value="silk">Silk</option>
                     <option value="wool">Wool</option>
+                </select>
+            </div>
+            <!-- Season -->
+            <div class="form-group">
+                <label for="season">Fabric (optional):</label>
+                <select id="season" name="season">
+                    <option value="">Select Season</option>
+                    <option value="winter">Winter</option>
+                    <option value="summer">Summer</option>
+                    <option value="spring">Spring</option>
+                    <option value="fall">Fall</option>
+                </select>
+            </div>
+            <!-- Occasion -->
+            <div class="form-group">
+                <label for="occasion">Fabric (optional):</label>
+                <select id="occasion" name="occasion">
+                    <option value="casual">Casual</option>
+                    <option value="formal">Formal</option>
+                    <option value="business">Business</option>
+                    <option value="sport">Sport</option>
+                    <option value="evening">Evening</option>
+                    <option value="outdoor">Outdoor</option>
                 </select>
             </div>
             <button type="submit" class="submit-btn">Get Recommendations</button>
