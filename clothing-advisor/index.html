@@ -1,9 +1,74 @@
-<html>
-    <head>
-        <title>Clothing Advisor</title>
-        <link type="stylesheet" href="./styles.css">
-    </head>
-    <body>
-        <h1>Welcome to clothing advisor!</h1>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outfit Recommendations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Find Your Perfect Outfit</h1>
+        <form id="preferencesForm">
+            <div class="form-group">
+                <label for="age">Age (1-100):</label>
+                <input type="number" id="age" name="age" required min="1" max="100">
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="build">Build:</label>
+                <select id="build" name="build">
+                    <option value="slim">Slim</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="skinType">Skin Type:</label>
+                <select id="skinType" name="skinType">
+                    <option value="light">Light</option>
+                    <option value="medium">Medium</option>
+                    <option value="dark">Dark</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="fit">Preferred Fit:</label>
+                <select id="fit" name="fit">
+                    <option value="slim">Slim</option>
+                    <option value="regular">Regular</option>
+                    <option value="relaxed">Relaxed</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="style">Style:</label>
+                <select id="style" name="style">
+                    <option value="classic">Classic</option>
+                    <option value="casual">Casual</option>
+                    <option value="trendy">Trendy</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="fabric">Fabric (optional):</label>
+                <select id="fabric" name="fabric">
+                    <option value="">Select Fabric</option>
+                    <option value="cotton">Cotton</option>
+                    <option value="silk">Silk</option>
+                    <option value="wool">Wool</option>
+                </select>
+            </div>
+            <button type="submit" class="submit-btn">Get Recommendations</button>
+        </form>
+        <div id="recommendationSection" class="hidden">
+            <h2>Recommended Outfits</h2>
+            <p id="outfitRecommendation"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
